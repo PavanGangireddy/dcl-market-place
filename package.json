@@ -2,7 +2,7 @@
   "name": "mirror-clone",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "ARWEAVE_WALLET=$(cat arweave-wallet.json) next dev",
     "build": "next build",
     "start": "next start",
     "test": "jest",

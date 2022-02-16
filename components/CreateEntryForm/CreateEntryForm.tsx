@@ -60,16 +60,20 @@ const CreateEntryForm = (): ReactElement => {
         if (provider && contract) {
           const data = createJsonMetaData(values);
 
-          // For Step 3: Create Post
-          // Submit Arweave transaction
-          // Use axios to post data and address to api/arweave/post endpoint.
-          // This request should return transactionId
+          const response = await axios.post(routes.api.arweave.post, {
+            data,
+            address,
+          });
 
-          // Stop here when you complete Step 3 ^^^^
+          const transactionId = response.data;
 
-          // For Step 6: Mint NFT
-          // Get signer and connect it to smart contract
-          // More information can be found here: https://docs.ethers.io/v5/getting-started/#getting-started--writing
+          // Minting
+
+          const signer = provider.getSigner();
+          const contractWithSigner = contract.connect(signer);
+
+          const resp = await contractWithSigner.createToken(transactionId);
+          const rec = await resp.wait();
 
           if (rec) {
             mutate(routes.api.arweave.search());

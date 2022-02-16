@@ -7,6 +7,7 @@ In this tutorial, you'll learn to develop a full stack application using [Arweav
 [Mirror](mirror.xyz) is a powerful blog publishing platform native to Web 3. It allows authors to own their posts and leverage the economic rails of crypto to earn value from readers. It also continues to grow as a ecosystem for creators that is more powerful than any publishing platform before it. In a way, Mirror is the first killer dApp of Web 3.
 
 ## 🧑‍💻 Getting started
+
 If you know how to program and have [JavaScript](https://www.javascript.com/) experience, you'll be able to complete the tutorial. Having said that, you'll be more comfortable if you have some experience with [TypeScript](https://www.typescriptlang.org/), [React](https://reactjs.org/), and [Next.js](https://nextjs.org/). Moreover, while you may not have built full stack Web 3 applications before, hopefully you have used a crypto wallet like [MetaMask](https://metamask.io/) and you're familiar with basic blockchain concepts like public address, private keys, and signing transactions.
 
 If any of that sounds unfamiliar, or the idea of engaging with those concepts sounds daunting at this point in your learning, we recommend starting with the [Solana Wallet](https://learn.figment.io/tutorials/solana-wallet-intro) tutorial before completing this one.
@@ -30,6 +31,7 @@ $ git checkout mirror-clone
 If you encounter any errors during this process, please join our [Discord](https://discord.gg/fszyM7K) for help.
 
 ## 🔩 Designed by Figment Learn
+
 Our goal at [Figment Learn](https://learn.figment.io/) is to build the best resources for developers learning about and building in Web 3. We really hope you enjoy the tutorial and thanks for checking it out. **WAGMI!**
 
 Learn more about [Figment](https://figment.io/) and [Figment Learn](https://learn.figment.io/).
@@ -37,3 +39,25 @@ Learn more about [Figment](https://figment.io/) and [Figment Learn](https://lear
 [Join us on Discord](https://discord.com/invite/fszyM7K) if you have any feedback or questions!
 
 -- The Figment Learn Team
+
+## My Learnings
+
+- The first step in performing any blockchain operation is typically instantiating a connection. This can be accomplished with the Providers class in ethers.js. A Web 3 provider object includes functionality to read from a protocol.
+- The testnet matches the mainnet in functionality but doesn't manage economic value.
+
+## Stuff
+
+- 2 People - Read any Tech engineering blog - Uber, Ola
+
+  - Explain the problems they solved
+
+- 5 People - [Build your own x](https://github.com/danistefanovic/build-your-own-x)
+
+  - Build your chrome extension
+    - Ex: All of our team will login and collect data
+  - Build your own Command-Line Tool - Go
+  - Build your own Chat app
+    - https://codeburst.io/build-a-chat-app-with-sentiment-analysis-using-next-js-c43ebf3ea643
+  - Build your own Front-end Framework / Library
+  - Build your own vscode extension to show cricket score
+  - Build your own x involving css animations
